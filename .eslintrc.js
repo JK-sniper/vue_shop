@@ -16,16 +16,17 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'space-before-function-paren': 0,
+        'func-call-spacing': 1,
         // "function-paren-newline": ["error", "never"],
         // "function-paren-newline": ["error", { "minItems": 3 }],
-        'space-before-function-paren': [
+/*         'space-before-function-paren': [
             'error',
             {
                 anonymous: 'always',
                 named: 'always',
                 asyncArrow: 'always',
             },
-        ]
+        ] */
     },
     parserOptions: {
         parser: 'babel-eslint'
